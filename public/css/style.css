@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+ ::-webkit-scrollbar{
+        display:none;
+    }
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(195, 193, 204);
+    font-family: 'Roboto', sans-serif;
+}
+section.chat__section {
+    width: 800px;
+    max-width: 90%;
+    background: #fff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.brand {
+    padding: 20px;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+.brand h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #444;
+    margin-left: 10px;
+}
+#user-send {
+    width:7vw;
+    height: 9vh;
+    margin-right:0.5vw;
+    z-index:4;
+    background-color: slateblue;
+    float: right;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+.chats{
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+}
+
+input {
+   /* margin-top: -13vh; */
+   float: left;
+    width: 87%;
+    border: 1px solid lightgray;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #FBFBFB;
+}
+
+.message {
+    padding: 20px; 
+    border-radius: 10px 40px; 
+    margin-bottom: 40px;
+    max-width: 200px;
+    position: relative;
+
+} 
+
+.incoming {
+    background: #8F8BE8;
+    color: #fff;  
+}
+.outgoing {
+    background: #e9eafd;
+    color: #787986;
+    margin-left: 43vw;
+    border-radius:10px 40px; 
+    text-align: right;
+}
+.user-join{
+    border-radius: 50px;
+    background-color:#b2b3c0;
+    color:black;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    width: max-content;
+    padding:7px 20px;
+    margin: 0 auto;
+}
+.message h5 {
+    position: absolute;
+    top: -20px;
+    color: #333;
+    font-size: 14px;
+}
+.incoming h5{
+    left: 0;
+}
+.outgoing h5{
+    right:0;
+    margin-right:0.1vw;
+}

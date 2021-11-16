@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wassup chat app</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="chat__section">
+        <div class="brand">
+            <img height="40" src="/img/wassup.png" alt="">
+            <h1>Whatsapp</h1>
+        </div>
+        <div class="chats">
+            <!-- <div class="user-join">
+                <p><b>Jarvis</b> joined the chat</p>
+            </div> -->
+            <!-- <div class="message incoming">
+             <h5>jarvis</h5>
+             <p>Hello Ultron</p>
+            </div>
+            <div class="message outgoing">
+                <h5>jarvis</h5>
+                <p>Hello Ultron</p>
+            </div> -->
+        </div>
+        
+        <div class="user-input">  
+            <input id="user-msg" type="text" placeholder="Write a message...">
+            <button id="user-send" type="button" >Send <i class="fa fa-paper-plane-o"></i></button>  
+        </div>
+    </section>
+    <!-- socket provide an inbuilt js file ,so we need to add it -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/client.js"></script>
+</body>
+
+</html>
